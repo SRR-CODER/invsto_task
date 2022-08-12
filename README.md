@@ -1,70 +1,164 @@
-# Getting Started with Create React App
+# Frontend Mentor - Interactive pricing component solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Interactive pricing component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### The challenge
 
-### `npm test`
+Users should be able to:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Use the slider and toggle to see prices for different page view numbers
 
-### `npm run build`
+### Screenshot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![ScreenShot](./Intern1.jpg)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Above is the Screenshot of the Interactive Pricing component
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Links
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Solution URL: https://github.com/SRR-CODER/invsto_task
+- Live Site URL: https://srr-coder.github.io/invsto_task/
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## My process
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Built with
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- PC-first workflow
+- [React](https://reactjs.org/) - JS library
 
-## Learn More
+### What I learned
+Plz find below a part of my CSS code I used to handle various layouts:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+@media screen and (max-width: 626px){
+  body{
+    background-size: inherit;
+  }
+  .top1{
+    font-size: 150%;
+  }
+  .top2{
+    font-size: 90%;
+  }
+  .bottom-outer{
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 10%;
+  }
+  .bottom-last-component{
+    flex-direction: column;
+  }
+  .bottom-container{
+    flex-direction: column;
+  }
+  label.name{
+    font-size: 80%;
+  }
+  .rchild{
+    margin-top: 1%;
+  }
+  .btn{
+    margin-top: 2%;
+    width: 160%;
+    padding: 10%;
+    /* margin-right: 40%; */
+  }
+  .btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn:hover{
+    transform: scale(1.1);
+  }
+  .ul-container{
+    width: 70%;
+  }
+}
 
-### Code Splitting
+@media screen and (min-width: 626px) and (max-width: 880px){
+  .bottom-outer{
+    width: 80%;
+    margin-left: 10%;
+  }
+  /* .bottom-last-component{
+    flex-direction: column;
+  }
+  .bottom-container{
+    flex-direction: column;
+  } */
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  .bottom-last-component{
+    justify-content: center;
+  }
+  label.name{
+    font-size: 80%;
+  }
+  .rchild{
+    margin-top: 1%;
+  }
+  .btn{
+    width: 160%;
+  }
+  .btn:hover{
+    transform: scale(1.1);
+  }
+  .ul-container{
+    width: 50%;
+  }
+}
 
-### Analyzing the Bundle Size
+@media screen and (min-width: 880px) and (max-width: 1420px){
+  .bottom-outer{
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Continued development
 
-### Advanced Configuration
+I want to work with APIs in future and Use Tailwind-CSS.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Useful resources
 
-### Deployment
+- [BootStrap](https://getbootstrap.com/)
+- [npm ReactJs](https://www.npmjs.com/) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Author
 
-### `npm run build` fails to minify
+- Profile - [LinkedIn](www.linkedin.com/in/srriiitk)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgments
+
+During the working of this project I learnt various concepts like dark mode which was somewhere deep in my mind to learn but
+for some reason wasn't able to do it via this project that also I added in my knowledge Repository. Discovered some new sources of 
+useful docs or components.

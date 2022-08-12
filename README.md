@@ -28,6 +28,7 @@ Users should be able to:
 - Use the slider and toggle to see prices for different page view numbers
 
 ###Video
+ 
 https://drive.google.com/file/d/1rltKdA6GNzR1I5Bx5f2T55jrcv1PbG9d/view?usp=sharing
 
 ### Screenshot

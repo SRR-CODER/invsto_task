@@ -5,6 +5,7 @@ import iconcheck from '../iconcheck.jpg';
 import { useState } from "react";
 
 export default function Bottom(props) {
+  const [toggle, setToggle] = useState(false);
   const [val, setVal] = useState(0);
   const bookmarks = {
     0: ["10K PAGEVIEWS", 8],
@@ -17,7 +18,7 @@ export default function Bottom(props) {
     <div className='bottom-outer' style = {props.boxc === "light" ? {backgroundColor: "grey", boxShadow:  "5px 5px 100px black,-5px -5px 100px white"} : {backgroundColor: "white"}}>
       <div className="bottom-container">
             <div className="bottom-child"><div className="lchild" style ={props.boxc === "light" ? {color: "white"} : {color: "hsl(225, 20%, 60%)"}}>{bookmarks[val][0]}</div></div>
-            <div className="bottom-child"><div className="rchild">${bookmarks[val][1]}<div className='rchild1' style ={props.boxc === "light" ? {color: "white"} : {color: "hsl(225, 20%, 60%)"}}>/ month</div></div></div>
+            <div className="bottom-child"><div className="rchild">${!toggle ? bookmarks[val][1] : (0.75) * bookmarks[val][1]}<div className='rchild1' style ={props.boxc === "light" ? {color: "white"} : {color: "hsl(225, 20%, 60%)"}}>/ month</div></div></div>
       </div>
       <div>
         <Slider val = {val} setVal = {setVal}/>
@@ -26,9 +27,9 @@ export default function Bottom(props) {
          
             <div className="toggle">
               <label className="name" style ={props.boxc === "light" ? {color: "white"} : {color: "hsl(225, 20%, 60%)"}}>Monthly Billing</label>
-              <input type="checkbox" className="checkbox" id="checkbox" />
+              <input type="checkbox" className="checkbox" id="checkbox" onChange = {() => {setToggle(!toggle)}}/>
 
-              <label for="checkbox" className="label">
+              <label for="checkbox" className="label" style = {toggle ? {backgroundColor: "hsl(174, 86%, 45%)"} : {backgroundColor: "hsl(223, 50%, 87%)"}}>
                 <div className="ball"></div>
               </label>
               <label className="name" style ={props.boxc === "light" ? {color: "white"} : {color: "hsl(225, 20%, 60%)"}}>

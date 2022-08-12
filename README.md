@@ -27,6 +27,9 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Use the slider and toggle to see prices for different page view numbers
 
+###Video
+![Video](./React App.mp4)
+
 ### Screenshot
 
 ![ScreenShot](./Intern1.jpg)

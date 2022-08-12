@@ -80,7 +80,7 @@ li{
 
 .top2 {
   font-weight: 600;
-  font-size: 15px;
+  font-size: 100%;
   color: hsl(225, 20%, 60%);
 }
 
@@ -117,9 +117,19 @@ li{
   display: flex;
 }
 @media screen and (max-width: 626px){
+  body{
+    background-size: inherit;
+  }
+  .top1{
+    font-size: 150%;
+  }
+  .top2{
+    font-size: 90%;
+  }
   .bottom-outer{
     width: 80%;
     margin-left: 10%;
+    padding-bottom: 10%;
   }
   .bottom-last-component{
     flex-direction: column;
@@ -134,7 +144,15 @@ li{
     margin-top: 1%;
   }
   .btn{
+    margin-top: 2%;
     width: 160%;
+    padding: 10%;
+    /* margin-right: 40%; */
+  }
+  .btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .btn:hover{
     transform: scale(1.1);
